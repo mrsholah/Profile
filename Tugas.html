@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+        <!DOCTYPE html>
 <html lang="id">
 <head>
     <meta charset="UTF-8">
@@ -56,19 +56,31 @@
             border-radius: 4px;
         }
         .btn {
-            background-color: #007bff;
+             position: relative;
+            background: #007bff;
             border: none;
             color: white;
-            padding: 0px 32px;
-            text-align: center;
-            text-decoration: none;
-            display: inline-block;
-            font-size: 200%;
-            margin: 4px 2px;
+            padding: 15px 30px;
+            font-size: 20px;
+            border-radius: 5px;
             cursor: pointer;
-            border-radius: 6px;
-            position: relative;
-            animation: float 3s ease-in-out infinite;
+            outline: none;
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+            will-change: transform, box-shadow;
+             transition: transform 0.2s ease, box-shadow 0.2s ease;
+            will-change: transform, box-shadow;
+            animation: move 0.8s infinite alternate; /* Animasi bergerak */
+        }
+
+        @keyframes move {
+            0% {
+                transform: translateY(0);
+            }
+            100% {
+                transform: translateY(-10px); /* Gerakan ke atas */
+            }
+        }
+
         }
      @keyframes float {
             0%, 100% {
@@ -81,8 +93,8 @@
          .profile-photo {
             display: block;
             margin: 20px auto; /* Center the image */
-            width: 180px; /* Sesuaikan ukuran gambar */
-            border-radius: 20%; /* Membuat gambar menjadi bulat */
+            width: 200px; /* Sesuaikan ukuran gambar */
+            border-radius: 10%; /* Membuat gambar menjadi bulat */
             border: 2px solid #007BFF; /* Tepian berwarna biru */
         }
     </style>
@@ -93,10 +105,9 @@
      <img src="profile.jpg" alt="Foto Sholahuddin Qoffal" class="profile-photo">
     <center><h2>Sholahuddin Qoffal</h2>
     <a href="profile.html"target="_blank"><button class="btn">
-    KLIK MY PROFILE</button></a>
+    CLICK MY PROFILE</button></a>
     </center>
     <div class="agenda">
-      
         <div class="hari" onclick="toggleTugas('selasa')">
             <h3>Reading Of Islamic Text</h3>
         </div>
