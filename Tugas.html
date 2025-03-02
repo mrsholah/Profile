@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tugas Mata Kuliah Sholah</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #87CEFA, #FFFFFF);
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+        .agenda {
+            background: #81cefa;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            margin: 20px 0;
+        }
+        .hari {
+            cursor: pointer;
+            margin: 10px 0;
+            padding: 5%;
+            border: 2px solid white; 
+            border-left: 5px solid #007BFF;
+            transition: background 0.3s;
+        }
+        .hari:hover {
+            background: #e7f1ff;
+        }
+        .tugas {
+            display: none;
+            margin-top: 10px;
+            padding: 10px;
+            border: 1px solid #007BFF;
+            border-radius: 5px;
+            background: #f9f9f9;
+        }
+    
+        .button {
+            background-color: #007bff; /* Hijau */
+            border: none;
+            color: white;
+            padding: 10px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+            border-radius: 4px;
+        }
+        .btn {
+            background-color: #007bff;
+            border: none;
+            color: black;
+            padding: 0px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 200%;
+            margin: 4px 2px;
+            cursor: pointer;
+            border-radius: 6px;
+            position: relative;
+            animation: float 3s ease-in-out infinite;
+        }
+     @keyframes float {
+            0%, 100% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-10px);
+            }
+            }
+         .profile-photo {
+            display: block;
+            margin: 20px auto; /* Center the image */
+            width: 180px; /* Sesuaikan ukuran gambar */
+            border-radius: 20%; /* Membuat gambar menjadi bulat */
+            border: 2px solid #007BFF; /* Tepian berwarna biru */
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Tugas Mata Kuliah</h1>
+     <img src="profile.jpg" alt="Foto Sholahuddin Qoffal" class="profile-photo">
+    <center><h2>Sholahuddin Qoffal</h2>
+    <a href="profil.html"target="_blank"><button class="btn">
+    KLIK MY PROFILE</button></a>
+    </center>
+    <div class="agenda">
+      
+        <div class="hari" onclick="toggleTugas('selasa')">
+            <h3>Reading Of Islamic Text</h3>
+        </div>
+        <div class="tugas" id="tugas-selasa">
+            <p>Kosong</p>
+            <a href="https://docs.google.com/document/d/1AvC7hPCj-9qbEnl-511NSRoUkIx6o-0RWVJz8I6feK/et?usp=drivesdk" target="_blank"><button class='button'>Lihat File</button></a>
+        </div>
+
+        <div class="hari" onclick="toggleTugas('rabu')">
+            <h3>Penelitian Tindakan Kelas</h3>
+        </div>
+        <div class="tugas" id="tugas-rabu">
+            <p>Kosong</p>
+            <a href="https://docs.google.com/dcument/d/1AvC7hPCj-9qbEnl-511NSRoUkIx6o-0RWVJz8I6feKw/edit?usp=drivesdk" target="_blank"><button class='button'>Lihat File</button></a>
+        </div>
+
+        <div class="hari" onclick="toggleTugas('kamis')">
+            <h3>Etika Profesi Guru PAI</h3>
+        </div>
+        <div class="tugas" id="tugas-kamis">
+            <p>Kosong</p>
+            <a href="https://docs.google.com/document/d/1AvC7hPCj-9qbEnl-511NSRoUkIx6o-0RWVJz8IeKw/edit?usp=drivesdk" target="_blank"><button class='button'>Lihat File</button></a>
+        </div>
+
+        <div class="hari" onclick="toggleTugas('jumat')">
+            <h3>Telaah Kurikulum PAI Di Madrasah</h3>
+        </div>
+        <div class="tugas" id="tugas-jumat">
+            <p>Kosong</p>
+            <a href="https://docs.google.c/document/d/1AvC7hPCj-9qbEnl-511NSRoUkIx6o-0RWVJz8I6feKw/edit?usp=drivesdk" target="_blank"><button class='button'>Lihat File</button></a>
+        </div>
+        
+        <div class="hari" onclick="toggleTugas('1')">
+            <h3>PAI Multi Disiplin</h3>
+        </div>
+        <div class="tugas" id="tugas-1">
+            <p>Kosong</p>
+            <a href="https://docs.google.com/document/d/1AvC7hPCj-9qbEnl-511NSRoUkIx6o-0RWVJz8IeKw/edit?usp=drivesdk" target="_blank"><button class='button'>Lihat File</button></a>
+        </div>
+        
+        <div class="hari" onclick="toggleTugas('2')">
+            <h3>Telaah Kurikulum PAI Di Sekolah</h3>
+        </div>
+        <div class="tugas" id="tugas-2">
+            <p>Kosong</p>
+            <a href="https://docs.google.com/document/d/1AvC7hPCj-9qbEnl-511NSRoUkIx6o-0RWVJz6feKw/edit?usp=drivesdk" target="_blank"><button class='button'>Lihat File</button></a>
+        </div>
+        
+          <div class="hari" onclick="toggleTugas('senin')">
+            <h3>Perencanaan Pembelajaran PAI</h3>
+        </div>
+        <div class="tugas" id="tugas-senin">
+            <p>KELOMPOK 2</p>
+            <p>Membuat Artikel Dengan Judul "Memahami Konsep Dasar Perencanaan Pembelajaran PAI"</p>
+            <a href="https://docs.google.com/document/d/1AvC7hPCj-9qbEnl-511NSRoUkIx6o-0RWz8I6feKw/edit?usp=drivesdk" target="_blank"><button class='button'>Lihat File</button></a>
+        </div>
+
+        <div class="hari" onclick="toggleTugas('3')">
+            <h3>Fikih Munakahah</h3>
+        </div>
+        <div class="tugas" id="tugas-3">
+            <p>Kosong</p>
+            <a href="https://docs.google.com/document/d/1AvC7hPCj-9qbEnl-511NSRoUkIx6o-0RWV8I6feKw/edit?usp=drivesdk" target="_blank"><button class='button'>Lihat File</button></a>
+        </div>
+        <div class="hari" onclick="toggleTugas('4')">
+            <h3>TIK Dan Sumber Belajar PAI</h3>
+        </div>
+        <div class="tugas" id="tugas-4">
+            <p>KELOMPOK 4</p>
+            <p>Membuat Makalah Dengan Judul "Pemanfaatan TIK dalam Pendidikan/ Pembelajaran (Jarak Jauh, Blog, facebook, dll)"</p>
+            <a href="https://docs.google.com/document/d/1AvC7hPCj-9qbEnl-511NSRoUkIx6o-WVJz8I6feKw/edit?usp=drivesdk" target="_blank"><button class='button'>Lihat File</button></a>
+        </div>
+        <div class="hari" onclick="toggleTugas('5')">
+            <h3>Metodologi Penelitian Kualitatif</h3>
+        </div>
+        <div class="tugas" id="tugas-5">
+            <p>Kosong</p>
+            <a href="https://docs.google.com/document/d/1AvC7hPCj-9qbEnl-511NSRoUkIx6o-0RWVJz8I6fw/edit?usp=drivesdk" target="_blank"><button class='button'>Lihat File</button></a>
+        </div>
+        <div class="hari" onclick="toggleTugas('6')">
+            <h3>Fikih Mawarits</h3>
+        </div>
+        <div class="tugas" id="tugas-6">
+            <p>Kosong</p>
+            <a href="https://docs.google.com/document/d/1AvC7hPCj-9qbEnl-511NSRoUkIx6o-0RWVJz8I6feKw/ed?usp=drivesdk" target="_blank"><button class='button'>Lihat File</button></a>
+        </div>
+        <div class="hari" onclick="toggleTugas('7')">
+            <h3>Psikologi Belajar</h3>
+        </div>
+        <div class="tugas" id="tugas-7">
+            <p>Kosong</p>
+            <a href="https://docs.google.com/dument/d/1AvC7hPCj-9qbEnl-511NSRoUkIx6o-0RWVJz8I6feKw/edit?usp=drivesdk" target="_blank"><button class='button'>Lihat File</button></a>
+        </div>
+    </div>
+
+    <script>
+        function toggleTugas(hari) {
+            const tugasElement = document.getElementById(`tugas-${hari}`);
+            if (tugasElement.style.display === "none" || tugasElement.style.display === "") {
+                tugasElement.style.display = "block";
+            } else {
+                tugasElement.style.display = "none";
+            }
+        }
+    </script>
+
+</body>
+</html>
