@@ -40,6 +40,13 @@
             animation: slideIn 1s ease-in-out forwards;
             animation-delay: 1s; /* Delay untuk muncul setelah logo */
         }
+        .text{
+            font-size: 10px; /* Ukuran font diperbesar */
+            margin-top:20px;
+            opacity: 0;
+            animation: slideIn 1s ease-in-out forwards;
+            animation-delay: 1s; 
+            
         @keyframes slideIn {
             0% { transform: translateY(20px); opacity: 0; }
             100% { transform: translateY(0); opacity: 1; }
@@ -64,7 +71,7 @@
     <div class="intro">
         <img src="logo kelas.png" alt="Logo" class="logo"> <!-- Ganti dengan URL logo Anda -->
         <h1 class="message">WELCOME TO MY PROFILE</h1>
-        <p1 class="message">Aplikasi Ini Dibuat Sendiri Oleh: Mr. Sholah</p1>
+        <p1 class="text">Aplikasi Ini Dibuat Sendiri Oleh: Mr. Sholah</p1>
     </div>
 </body>
 </html>
